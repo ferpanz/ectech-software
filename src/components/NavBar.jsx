@@ -21,17 +21,7 @@ const NavBar = () => {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
+                  Inicio
                 </a>
               </li>
               <li className="nav-item dropdown">
@@ -42,25 +32,30 @@ const NavBar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Servicios
                 </a>
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Desarrollo IT
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
+                      Desarrollos de aplicaciones web
                     </a>
                   </li>
                 </ul>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Productos
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Contacto
+                </a>
               </li>
             </ul>
           </div>
