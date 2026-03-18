@@ -6,7 +6,7 @@ function Header() {
     <nav className="navbar bg-dark">
       <div className="container-fluid justify-content-center">
         <a className="navbar-brand" href="#">
-        <img src={logo} alt="Logo" width="200" class="d-inline-block align-text-top"></img>
+        <img className="d-none d-lg-block d-inline-block align-text-top" src={logo} alt="Logo" width="200"></img>
       
     </a>
   </div>
