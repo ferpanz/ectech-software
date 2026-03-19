@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logos/ectech-logo.png'
+import { NavLink } from 'react-router-dom'
 
 
 const NavBar = () => {
@@ -23,9 +24,7 @@ const NavBar = () => {
           <div className="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Inicio
-                </a>
+                <NavLink className="nav-link active" aria-current="page" to="/">Inicio</NavLink>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -39,24 +38,25 @@ const NavBar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="/soporte-hardware">
                       Soporte hardware
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="/networking">
                       Networking
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="/servidores">
                       Servidores
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="/vpn">
+
                       VPNs
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
@@ -72,14 +72,14 @@ const NavBar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="/diseno-grafico">
                       Diseño gráfico
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="/diseno-web">
                       Diseño web
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
@@ -107,19 +107,19 @@ const NavBar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" to="/productos">
                   Productos
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" to="/sobre-nosotros">
                   Sobre nosotros
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" to="/contacto">
                   Contacto
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
