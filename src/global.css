@@ -1,3 +1,25 @@
-.ectech-text {
-  color: #F2CF63;
+:root {
+  --color-texto-base: #212529;
+  --color-texto-navbar: #ffffff;
+  --color-texto-hover: #ffc107;
+}
+
+body {
+  color: var(--color-texto-base);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .dropdown-toggle,
+.navbar .dropdown-item {
+  color: var(--color-texto-navbar) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+  color: var(--color-texto-hover) !important;
+}
+
+.navbar .nav-link.active {
+  color: var(--color-texto-hover) !important;
 }
