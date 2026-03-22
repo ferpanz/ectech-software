@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../assets/logos/ectech-logo.png'
-import guepp from '../assets/logos/guepp sin fondo.png'
+import guepp from '../assets/logos/megafono.png'
 import { NavLink } from 'react-router-dom'
 function Footer() {
   return (
@@ -19,69 +19,63 @@ function Footer() {
               </NavLink>
               <p className="text-body-secondary">&copy; 2025 - Power by ECTECH</p>
               <a href="https://guepp.com.ar/" target='_blanc'>
-                <img className="bi me-2" width="100" height="auto" aria-hidden="true" src={guepp} alt="Guepp Logo">
+                <img className="bi me-2 mt-4" width="70" height="auto" aria-hidden="true" src={guepp} alt="Guepp Logo">
                 </img>
               </a>
+              <p className="text-body-secondary">GÜEPP! - WEB DESING</p>
             </div>
             <div className="col-12 col-md-8">
               <div className="row row-cols-3">
                 <div className="col mb-3">
-                  <h5>Section</h5>
                   <ul className="nav flex-column">
                     <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">Home</a>
+                      <NavLink to="/" className="nav-link p-0 text-body-secondary">Inicio</NavLink>
                     </li>
                     <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">Features</a>
+                      <NavLink to="/productos" className="nav-link p-0 text-body-secondary">Productos</NavLink>
                     </li>
                     <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">Pricing</a>
+                      <NavLink to="/sobre-nosotros" className="nav-link p-0 text-body-secondary">Sobre Nosotros</NavLink>
+                    </li>
+                  </ul>
+                  <h5>Diseño</h5>
+                  <ul className="nav flex-column">
+                    <li className="nav-item mb-2">
+                      <NavLink to="/diseno-grafico" className="nav-link p-0 text-body-secondary">Diseño gráfico</NavLink>
                     </li>
                     <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">FAQs</a>
-                    </li>
-                    <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">About</a>
+                      <NavLink to="/diseno-web" className="nav-link p-0 text-body-secondary">Diseño web</NavLink>
                     </li>
                   </ul>
                 </div>
                 <div className="col mb-3">
-                  <h5>Section</h5>
+                  <h5>Servicios IT</h5>
                   <ul className="nav flex-column">
                     <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">Home</a>
+                      <NavLink to="/soporte-hardware" className="nav-link p-0 text-body-secondary">Soporte Hardware</NavLink>
                     </li>
                     <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">Features</a>
+                      <NavLink to="/networking" className="nav-link p-0 text-body-secondary">Networking</NavLink>
                     </li>
                     <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">Pricing</a>
+                      <NavLink to="/servidores" className="nav-link p-0 text-body-secondary">Servidores</NavLink>
                     </li>
                     <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">FAQs</a>
-                    </li>
-                    <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">About</a>
+                      <NavLink to="/vpn" className="nav-link p-0 text-body-secondary">VPNs</NavLink>
                     </li>
                   </ul>
                 </div>
                 <div className="col mb-3">
-                  <h5>Section</h5>
+                  <h5>Contactos</h5>
                   <ul className="nav flex-column">
                     <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">Home</a>
+                      <i class="bi bi-telephone-fill p-0 text-body-secondary"> 3571601870</i>
                     </li>
                     <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">Features</a>
+                      <i class="bi bi-telephone-fill p-0 text-body-secondary"> 3571601870</i>
                     </li>
                     <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">Pricing</a>
-                    </li>
-                    <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">FAQs</a>
-                    </li>
-                    <li className="nav-item mb-2">
-                      <a href="#" className="nav-link p-0 text-body-secondary">About</a>
+                      <a href="mailto:ectech-sofware@test.com.ar" className='nav-link p-0 text-body-secondary'><i class="bi bi-envelope-fill"> ectech-sofware@test.com.ar</i></a>
                     </li>
                   </ul>
                 </div>
