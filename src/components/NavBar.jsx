@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from '../assets/logos/ectech-logo.png'
 import { NavLink } from 'react-router-dom'
+import guepp from '../assets/logos/megafono.png'
+import disenar from '../assets/logos/disenar-logo.png'
 
 
 const NavBar = () => {
@@ -101,13 +103,12 @@ const NavBar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="https://diseñar.com.ar" target="_blank" rel="noopener noreferrer">
+                    <a className="dropdown-item" href="https://diseñar.com.ar" target="_blank" rel="noopener noreferrer"><img src={disenar} alt="Diseñar Logo" width="40" height="auto"/>
                       Diseñar
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="https://guepp.com.ar/" target="_blank" rel="noopener noreferrer">
-                      GÜEPP!
+                    <a className="dropdown-item" href="https://guepp.com.ar/" target="_blank" rel="noopener noreferrer"><img src={guepp} alt="Güepp Logo" width="40" height="auto"/> GÜEPP!
                     </a>
                   </li>
                 </ul>
