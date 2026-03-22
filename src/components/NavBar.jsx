@@ -24,7 +24,13 @@ const NavBar = () => {
           <div className="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link active" aria-current="page" to="/">Inicio</NavLink>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+                  aria-current="page"
+                >
+                  Inicio
+                </NavLink>
               </li>
               <li className="nav-item dropdown">
                 <a
