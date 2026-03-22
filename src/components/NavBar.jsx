@@ -103,8 +103,7 @@ const NavBar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="https://diseñar.com.ar" target="_blank" rel="noopener noreferrer"><img src={disenar} alt="Diseñar Logo" width="40" height="auto"/>
-                      Diseñar
+                    <a className="dropdown-item" href="https://diseñar.com.ar" target="_blank" rel="noopener noreferrer"><img src={disenar} alt="Diseñar Logo" width="40" height="auto"/> Diseñar
                     </a>
                   </li>
                   <li>
