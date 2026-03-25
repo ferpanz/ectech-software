@@ -6,6 +6,13 @@ import disenar from '../assets/logos/disenar-logo.png'
 
 
 const NavBar = () => {
+  const closeMenu = () => {
+    const navbarToggler = document.querySelector('.navbar-toggler')
+    const navbarCollapse = document.querySelector('#navbarNavDropdown')
+    if (navbarCollapse?.classList.contains('show')) {
+      navbarToggler?.click()
+    }
+  }
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body" data-bs-theme="dark">
@@ -28,6 +35,7 @@ const NavBar = () => {
               <li className="nav-item">
                 <NavLink
                   to="/"
+                  onClick={closeMenu}
                   className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
                   aria-current="page"
                 >
@@ -46,22 +54,22 @@ const NavBar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <NavLink className="dropdown-item" to="/soporte-hardware">
+                    <NavLink className="dropdown-item" to="/soporte-hardware" onClick={closeMenu}>
                       Soporte hardware
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="/networking">
+                    <NavLink className="dropdown-item" to="/networking" onClick={closeMenu}>
                       Networking
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="/servidores">
+                    <NavLink className="dropdown-item" to="/servidores" onClick={closeMenu}>
                       Servidores
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="/vpn">
+                    <NavLink className="dropdown-item" to="/vpn" onClick={closeMenu}>
 
                       VPNs
                     </NavLink>
@@ -80,12 +88,12 @@ const NavBar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <NavLink className="dropdown-item" to="/diseno-grafico">
+                    <NavLink className="dropdown-item" to="/diseno-grafico" onClick={closeMenu}>
                       Diseño gráfico
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item" to="/diseno-web">
+                    <NavLink className="dropdown-item" to="/diseno-web" onClick={closeMenu}>
                       Diseño web
                     </NavLink>
                   </li>
@@ -113,17 +121,17 @@ const NavBar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/productos">
+                <NavLink className="nav-link" to="/productos" onClick={closeMenu}>
                   Productos
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/sobre-nosotros">
+                <NavLink className="nav-link" to="/sobre-nosotros" onClick={closeMenu}>
                   Sobre nosotros
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/contacto">
+                <NavLink className="nav-link" to="/contacto" onClick={closeMenu}>
                   Contacto
                 </NavLink>
               </li>
