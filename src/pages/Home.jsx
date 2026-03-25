@@ -1,20 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import logo from './../assets/logos/ectech-logo.png'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 
 function Home() {
-
-  useEffect(() => {
-  AOS.init({ 
-    duration: 1000,
-    easing: 'ease-in-cubic',
-    once: true,
-    offset: 80,
-  })
-  }, [])
 
   return (
     <>
@@ -49,7 +38,7 @@ function Home() {
           {/* Imagen */}
           <div data-aos="fade-up" data-aos-delay="300">
             <img
-              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80"
+              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80"
               alt="Desarrollo de software"
               className="img-fluid rounded shadow"
               style={{ maxHeight: "300px", objectFit: "cover" }}

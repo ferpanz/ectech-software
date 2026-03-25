@@ -1,19 +1,8 @@
 import React from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 import avatar from './../assets/logos/avatar.jpg'
 
 function SobreNosotros() {
-
-  useEffect(() => {
-AOS.init({ 
-  duration: 1000,
-  easing: 'ease-in-cubic',
-  once: true,
-  offset: 80,
-})
-}, [])
 
   return (
     <>
