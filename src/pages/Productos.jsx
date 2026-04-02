@@ -3,6 +3,7 @@ import Proyectos from "../components/Proyectos"
 
 function Productos() {
   return (
+    <>
     <div className="container my-5">
 
       <h1 className="mb-5 text-center" data-aos="fade-up">
@@ -32,6 +33,7 @@ function Productos() {
       />
 
     </div>
+    </>
   )
 }
 

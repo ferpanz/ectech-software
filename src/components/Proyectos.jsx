@@ -4,6 +4,8 @@ function Projectos({ title, client, date, images, reverse }) {
   const carouselId = `carousel-${title.replace(/\s+/g, "")}`
 
   return (
+    <>
+    
     <div className="row align-items-center my-5">
 
       {/* Carrusel */}
@@ -45,6 +47,7 @@ function Projectos({ title, client, date, images, reverse }) {
       </div>
 
     </div>
+    </>
   )
 }
 
