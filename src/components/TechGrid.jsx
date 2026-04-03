@@ -16,7 +16,7 @@ const TechGrid = () => {
         <div
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
         >
-          <div class="col d-flex align-items-start">
+          <div class="col d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <img
               src={htmlLogo}
               class="img-fluid text-body-secondary flex-shrink-0 me-3"
@@ -29,12 +29,10 @@ const TechGrid = () => {
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
                 HTML
               </h3>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-              </p>
+              
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
             <img
               src={jsLogo}
               class="img-fluid text-body-secondary flex-shrink-0 me-3"
@@ -47,12 +45,10 @@ const TechGrid = () => {
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
                 JavaScript
               </h3>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-              </p>
+              
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
             <img
               src={kotlinLogo}
               class="img-fluid text-body-secondary flex-shrink-0 me-3"
@@ -65,12 +61,10 @@ const TechGrid = () => {
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
                 Kotlin
               </h3>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-              </p>
+              
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
             <img
               src={javaLogo}
               class="img-fluid text-body-secondary flex-shrink-0 me-3"
@@ -83,12 +77,10 @@ const TechGrid = () => {
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
                 JAVA
               </h3>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-              </p>
+              
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
             <img
               src={nodejsLogo}
               class="img-fluid text-body-secondary flex-shrink-0 me-3"
@@ -101,12 +93,10 @@ const TechGrid = () => {
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
                 Node JS
               </h3>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-              </p>
+              
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col d-flex align-items-center" data-aos="fade-up" data-aos-delay="600">
             <img
               src={dockerLogo}
               class="img-fluid text-body-secondary flex-shrink-0 me-3"
@@ -119,12 +109,10 @@ const TechGrid = () => {
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
                 Docker
               </h3>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-              </p>
+              
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col d-flex align-items-center" data-aos="fade-up" data-aos-delay="700">
            <img
               src={ubuntuLogo}
               class="img-fluid text-body-secondary flex-shrink-0 me-3"
@@ -137,12 +125,10 @@ const TechGrid = () => {
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
                 Ubuntu
               </h3>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-              </p>
+             
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col d-flex align-items-center" data-aos="fade-up" data-aos-delay="800">
             <img
               src={kaliLogo}
               class="img-fluid text-body-secondary flex-shrink-0 me-3"
@@ -155,9 +141,7 @@ const TechGrid = () => {
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
                 Kali Linux
               </h3>
-              <p>
-                Paragraph of text beneath the heading to explain the heading.
-              </p>
+              
             </div>
           </div>
         </div>
