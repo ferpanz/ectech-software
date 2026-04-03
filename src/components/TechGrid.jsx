@@ -1,26 +1,33 @@
 import React from 'react'
+import htmlLogo from '../assets/tecnologias/html.png'
+import jsLogo from '../assets/tecnologias/js.png'
+import kotlinLogo from '../assets/tecnologias/kotlin.png'
+import javaLogo from '../assets/tecnologias/java.png'
+import nodejsLogo from '../assets/tecnologias/nodejs.png'
+import dockerLogo from '../assets/tecnologias/docker.png'
+import ubuntuLogo from '../assets/tecnologias/ubuntu.png'
+import kaliLogo from '../assets/tecnologias/kali.png'
 
 const TechGrid = () => {
   return (
     <>
-      <div class="b-example-divider"></div>
       <div class="container px-4 py-5" id="icon-grid">
         <h2 class="pb-2 border-bottom">Tecnologías</h2>
         <div
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
         >
           <div class="col d-flex align-items-start">
-            <svg
-              class="bi text-body-secondary flex-shrink-0 me-3"
-              width="1.75em"
-              height="1.75em"
+            <img
+              src={htmlLogo}
+              class="img-fluid text-body-secondary flex-shrink-0 me-3"
+              width="60"
+              height="auto"
               aria-hidden="true"
-            >
-              <use xlink:href="#bootstrap"></use>
-            </svg>
+            >           
+            </img>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                Featured title
+                HTML
               </h3>
               <p>
                 Paragraph of text beneath the heading to explain the heading.
@@ -28,17 +35,17 @@ const TechGrid = () => {
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg
-              class="bi text-body-secondary flex-shrink-0 me-3"
-              width="1.75em"
-              height="1.75em"
+            <img
+              src={jsLogo}
+              class="img-fluid text-body-secondary flex-shrink-0 me-3"
+              width="60"
+              height="auto"
               aria-hidden="true"
-            >
-              <use xlink:href="#cpu-fill"></use>
-            </svg>
+            >           
+            </img>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                Featured title
+                JavaScript
               </h3>
               <p>
                 Paragraph of text beneath the heading to explain the heading.
@@ -46,17 +53,17 @@ const TechGrid = () => {
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg
-              class="bi text-body-secondary flex-shrink-0 me-3"
-              width="1.75em"
-              height="1.75em"
+            <img
+              src={kotlinLogo}
+              class="img-fluid text-body-secondary flex-shrink-0 me-3"
+              width="60"
+              height="auto"
               aria-hidden="true"
-            >
-              <use xlink:href="#calendar3"></use>
-            </svg>
+            >           
+            </img>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                Featured title
+                Kotlin
               </h3>
               <p>
                 Paragraph of text beneath the heading to explain the heading.
@@ -64,17 +71,17 @@ const TechGrid = () => {
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg
-              class="bi text-body-secondary flex-shrink-0 me-3"
-              width="1.75em"
-              height="1.75em"
+            <img
+              src={javaLogo}
+              class="img-fluid text-body-secondary flex-shrink-0 me-3"
+              width="60"
+              height="auto"
               aria-hidden="true"
-            >
-              <use xlink:href="#home"></use>
-            </svg>
+            >           
+            </img>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                Featured title
+                JAVA
               </h3>
               <p>
                 Paragraph of text beneath the heading to explain the heading.
@@ -82,17 +89,17 @@ const TechGrid = () => {
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg
-              class="bi text-body-secondary flex-shrink-0 me-3"
-              width="1.75em"
-              height="1.75em"
+            <img
+              src={nodejsLogo}
+              class="img-fluid text-body-secondary flex-shrink-0 me-3"
+              width="60"
+              height="auto"
               aria-hidden="true"
-            >
-              <use xlink:href="#speedometer2"></use>
-            </svg>
+            >           
+            </img>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                Featured title
+                Node JS
               </h3>
               <p>
                 Paragraph of text beneath the heading to explain the heading.
@@ -100,17 +107,17 @@ const TechGrid = () => {
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg
-              class="bi text-body-secondary flex-shrink-0 me-3"
-              width="1.75em"
-              height="1.75em"
+            <img
+              src={dockerLogo}
+              class="img-fluid text-body-secondary flex-shrink-0 me-3"
+              width="60"
+              height="auto"
               aria-hidden="true"
-            >
-              <use xlink:href="#toggles2"></use>
-            </svg>
+            >           
+            </img>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                Featured title
+                Docker
               </h3>
               <p>
                 Paragraph of text beneath the heading to explain the heading.
@@ -118,17 +125,17 @@ const TechGrid = () => {
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg
-              class="bi text-body-secondary flex-shrink-0 me-3"
-              width="1.75em"
-              height="1.75em"
+           <img
+              src={ubuntuLogo}
+              class="img-fluid text-body-secondary flex-shrink-0 me-3"
+              width="60"
+              height="auto"
               aria-hidden="true"
-            >
-              <use xlink:href="#geo-fill"></use>
-            </svg>
+            >           
+            </img>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                Featured title
+                Ubuntu
               </h3>
               <p>
                 Paragraph of text beneath the heading to explain the heading.
@@ -136,17 +143,17 @@ const TechGrid = () => {
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg
-              class="bi text-body-secondary flex-shrink-0 me-3"
-              width="1.75em"
-              height="1.75em"
+            <img
+              src={kaliLogo}
+              class="img-fluid text-body-secondary flex-shrink-0 me-3"
+              width="60"
+              height="auto"
               aria-hidden="true"
-            >
-              <use xlink:href="#tools"></use>
-            </svg>
+            >           
+            </img>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
-                Featured title
+                Kali Linux
               </h3>
               <p>
                 Paragraph of text beneath the heading to explain the heading.
