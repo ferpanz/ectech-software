@@ -1,12 +1,12 @@
 import React from 'react'
-import htmlLogo from '../assets/tecnologias/html.png'
-import jsLogo from '../assets/tecnologias/js.png'
-import kotlinLogo from '../assets/tecnologias/kotlin.png'
-import javaLogo from '../assets/tecnologias/java.png'
-import nodejsLogo from '../assets/tecnologias/nodejs.png'
-import dockerLogo from '../assets/tecnologias/docker.png'
-import ubuntuLogo from '../assets/tecnologias/ubuntu.png'
-import kaliLogo from '../assets/tecnologias/kali.png'
+import htmlLogo from '../assets/tecnologias/html.svg'
+import jsLogo from '../assets/tecnologias/js.svg'
+import kotlinLogo from '../assets/tecnologias/kotlin.svg'
+import javaLogo from '../assets/tecnologias/java.svg'
+import nodejsLogo from '../assets/tecnologias/nodejs.svg'
+import dockerLogo from '../assets/tecnologias/docker.svg'
+import ubuntuLogo from '../assets/tecnologias/ubuntu.svg'
+import kaliLogo from '../assets/tecnologias/kali.svg'
 
 const TechGrid = () => {
   return (
