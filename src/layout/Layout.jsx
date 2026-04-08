@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
 import { useAOS } from '../hooks/useAOS'
+import EnObra from '../components/EnObra'
 
 
 const Layout = () => {
@@ -19,6 +20,7 @@ const Layout = () => {
     <div style={{ minHeight: '100vh', paddingBottom: '80px' }}>
         <Header />
         <NavBar />
+        <EnObra />
         <Outlet />
         <Footer /> 
            
