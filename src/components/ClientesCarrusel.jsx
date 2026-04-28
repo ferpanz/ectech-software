@@ -208,7 +208,6 @@ const ClientesCarrusel = () => {
         }
 
         .cliente-tile {
-          background: #fff;
           border-radius: 14px;
           padding: .75rem;
           height: 100%;
