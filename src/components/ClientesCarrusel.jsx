@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 
 // Importar dinámicamente todas las imágenes de logo-clientes
 const logoModules = import.meta.glob("../assets/logo-clientes/*", {
@@ -18,13 +17,9 @@ const generarClientes = () => {
       .replace(/[-_]/g, " ") // reemplazar guiones/guiones bajos por espacios
       .replace(/\b\w/g, (l) => l.toUpperCase()); // capitalizar cada palabra
     
-    // Usar el nombre como slug para el card (ruta)
-    const card = `/${nombreBase.toLowerCase().replace(/\s+/g, "-").replace(/[-_]{2,}/g, "-")}`;
-    
     return {
       nombre,
       imagen: module.default || path,
-      card,
     };
   });
 };
@@ -178,7 +173,7 @@ const ClientesCarrusel = () => {
 
   return (
     <section className="container py-4">
-      <h2 className="mb-3 text-center fw-bold bg-marron p-3 rounded-3">Nuestros clientes</h2>
+      <h2 className="pb-2 border-bottom">Clientes</h2>
 
       <style>{`
         .clientes-slider {
@@ -226,26 +221,10 @@ const ClientesCarrusel = () => {
           box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.10);
         }
 
-        .cliente-link {
-          text-decoration: none;
-          color: inherit;
-          display: block;
-        }
-
         .cliente-logo {
           width: 100%;
           height: 120px;
           object-fit: contain;
-        }
-
-        @media (min-width: 768px) {
-          .cliente-logo { height: 140px; }
-        }
-
-        .cliente-nombre {
-          font-weight: 600;
-          color: #212529;
-          font-size: .95rem;
         }
 
         /* Botones (reutilizamos estilo bootstrap pero custom posicion) */
@@ -280,8 +259,6 @@ const ClientesCarrusel = () => {
       `}</style>
 
       <div className="clientes-slider" ref={wrapRef}>
-        
-
         <div className="slider-viewport">
           <div
             className={`slider-track ${transitionOn ? "transition" : ""}`}
@@ -290,26 +267,21 @@ const ClientesCarrusel = () => {
             {trackItems.map((c, i) => (
               <div
                 className="cliente-item"
-                key={`${c.card}-${i}`}
+                key={`${c.nombre}-${i}`}
                 style={{ width: `${itemW}px` }}
               >
-                <Link to={c.card} className="cliente-link" aria-label={`Ir a ${c.nombre}`}>
-                  <div className="cliente-tile">
-                    <img
-                      src={c.imagen}
-                      alt={`Logo ${c.nombre}`}
-                      className="cliente-logo"
-                      loading="lazy"
-                    />
-                    
-                  </div>
-                </Link>
+                <div className="cliente-tile">
+                  <img
+                    src={c.imagen}
+                    alt={`Logo ${c.nombre}`}
+                    className="cliente-logo"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             ))}
           </div>
         </div>
-
-        
       </div>
     </section>
   );
